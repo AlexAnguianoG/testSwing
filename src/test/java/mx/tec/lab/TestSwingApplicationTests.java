@@ -30,11 +30,12 @@ class TestSwingApplicationTests {
 		String expectedResult2 = "";
 		// When operation is sum
 		application.operationButton.doClick();
-		// Then result is empty
-		String actualResult = application.resultTextField.getText();
-		assertEquals(expectedResult, actualResult);
+		// Then input is cleared
 		String actualResult2 = application.numberOneTextField.getText();
 		assertEquals(expectedResult2, actualResult2);
+		// And result is empty
+		String actualResult = application.resultTextField.getText();
+		assertEquals(expectedResult, actualResult);
 	}
 	
 }
