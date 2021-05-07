@@ -31,11 +31,11 @@ class TestSwingApplicationTests {
 		// When operation is sum
 		application.operationButton.doClick();
 		// Then input is cleared
-		String actualResult2 = application.numberOneTextField.getText();
-		assertEquals(expectedResult2, actualResult2);
-		// And result is empty
-		String actualResult = application.resultTextField.getText();
+		String actualResult = application.numberOneTextField.getText();
 		assertEquals(expectedResult, actualResult);
+		// And result is empty
+		String actualResult2 = application.resultTextField.getText();
+		assertEquals(expectedResult2, actualResult2);
 	}
 	
 }
